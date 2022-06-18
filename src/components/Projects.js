@@ -1,5 +1,6 @@
 const projectsDB = [
     {
+        key: "1",
         title: "Real-time currency converter",
         description:
             "A real-time currency converter developed using Vanilla JS and Exchange Rate API.",
@@ -8,6 +9,7 @@ const projectsDB = [
     },
 
     {
+        key: "2",
         title: "Expense Tracker",
         description:
             "An Expense Tracker built using HTML, CSS, JavaScript and Local Storage.",
@@ -16,6 +18,7 @@ const projectsDB = [
     },
 
     {
+        key: "3",
         title: "Form validations",
         description:
             "Client side form validation using HTML, CSS, JavaScript and Regex.",
@@ -24,6 +27,7 @@ const projectsDB = [
     },
 
     {
+        key: "4",
         title: "Rock Paper Scissors Game",
         description:
             "A simple UI based Rock Paper Scissors game built using HTML, CSS and JavaScript. Have fun!",
@@ -33,6 +37,7 @@ const projectsDB = [
     },
 
     {
+        key: "5",
         title: "Fylo landing page",
         description:
             "A beautiful and responsive webpage with pleasing look using grid layout",
@@ -43,6 +48,7 @@ const projectsDB = [
     },
 
     {
+        key: "6",
         title: "Clipboard landing page",
         description:
             "A beautiful and responsive webpage using flex layout containing few individual sections",
@@ -53,6 +59,7 @@ const projectsDB = [
     },
 
     {
+        key: "7",
         title: "Chat app component",
         description:
             "A splendid and complex chat app component designed using HTML and illustrated using CSS",
@@ -63,6 +70,7 @@ const projectsDB = [
     },
 
     {
+        key: "8",
         title: "Testimonials grid section",
         description: "An elegant testimonials section using flex layout",
         live_url:
@@ -72,6 +80,7 @@ const projectsDB = [
     },
 
     {
+        key: "9",
         title: "Order summary component",
         description:
             "A simple and responsive order summary component using flex layout",
@@ -97,7 +106,7 @@ export default function Skills() {
 
             <div className="projects__show">
                 {projectsDB.map((obj) => (
-                    <Project attr={obj}></Project>
+                    <Project key={obj.key} attr={obj}></Project>
                 ))}
             </div>
         </section>

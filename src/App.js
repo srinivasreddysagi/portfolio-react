@@ -7,9 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
     return <div className="App">
-        <Nav handleClick={() => {
-            console.log('clicked');
-        }}></Nav>
+        <Nav></Nav>
         <Intro></Intro>
         <Skills></Skills>
         <Projects></Projects>

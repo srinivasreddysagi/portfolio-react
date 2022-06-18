@@ -2,31 +2,21 @@
 
 const menuButton = document.getElementById("menu");
 const menuList = document.getElementById("menu-list");
-// const links = Array(
-//     document.getElementById("item-1"),
-//     document.getElementById("item-2"),
-//     document.getElementById("item-3")
-// );
 
-// menuButton.addEventListener("click", () =>
+export default function Nav() {
+    function toggle() {
+        menuButton.classList.toggle("show");
+        menuList.classList.toggle("show");
+    }
 
-function toggle() {
-    menuButton.classList.toggle("show");
-    menuList.classList.toggle("show");
-}
+    function remove() {
+        menuButton.classList.remove("show");
+        menuList.classList.remove("show");
+    }
 
-// links.forEach((e) => {
-//     e.addEventListener("click", () =>
-
-function remove() {
-    menuButton.classList.remove("show");
-    menuList.classList.remove("show");
-}
-
-export default function Nav(props) {
     return (
         <header className="topbar">
-            <div className="menu" id="menu" onClick={props.handleClick}>
+            <div className="menu" id="menu" onClick={toggle}>
                 <i className="fa-solid fa-align-justify"></i>
             </div>
             <div className="topbar__menu" id="menu-list">
