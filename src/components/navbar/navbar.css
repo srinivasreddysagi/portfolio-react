@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+/* ==== NAVBAR MOBILE VIEW ==== */
+
+.navbar__menu--icon {
+    color: var(--clr-hot-pink-c);
+    height: 3.8rem;
+    width: auto;
+    position: absolute;
+    right: 0.5rem;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.navbar__menu--mobile {
+    background: var(--clr-hot-pink-a);
+    width: 90%;
+    height: 60vh;
+    padding: 1rem;
+    margin: 0 calc(100vw - 95%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid hsla(350, 100%, 80%, 0.5);
+    border-radius: 16px;
+    position: absolute;
+    top: 4rem;
+    z-index: 1;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.navbar__menu--mobile ul li {
+    padding: 0.6rem;
+    border-bottom: 1px solid var(--clr-hot-pink);
+}
+
+.navbar__menu--mobile ul li a {
+    color: var(--very-dark-blue);
+}
+
+.navbar__menu--mobile--show {
+    font-size: 1.4rem;
+    color: var(--light-grayish-blue);
+    padding: 0.5rem;
+    display: flex;
+    margin-right: 1rem;
+    transform: translateX(0%);
+    transition: var(--trans);
+}
+
+.navbar__menu--mobile--hide {
+    transform: translateX(150%);
+    transition: var(--trans);
+}
+/* ---- NAVBAR MOBILE VIEW ---- */
+
+/* ==== NAVBAR DESKTOP VIEW ==== */
+
+@media (min-width: 750px) {
+    .navbar__menu--mobile,
+    .navbar__menu--mobile ul,
+    .navbar__menu--mobile ul li {
+        all: unset;
+    }
+
+    .navbar__menu--icon {
+        display: none;
+    }
+
+    .navbar {
+        border-top: 4px solid var(--clr-btn);
+    }
+
+    .navbar__menu--desktop ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .navbar__menu--desktop ul li {
+        font-weight: 600;
+        padding: 0.5rem;
+        transition: var(--trans-less);
+    }
+
+    .navbar__menu--desktop ul li:hover {
+        background-color: var(--clr-btn);
+        transition: var(--trans-less);
+        border-radius: 0 0 6px 6px;
+    }
+
+    .navbar__menu--desktop ul li a {
+        padding-bottom: 0.2rem;
+        border-bottom: 1px solid var(--clr-btn);
+    }
+
+    .navbar__menu--desktop ul li:hover a {
+        color: var(--clr-mint-c);
+    }
+}
+
+/* ---- NAVBAR DESKTOP VIEW ---- */
