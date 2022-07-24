@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 import "./navbar.css";
-// , "About Us", "Services"
+
 export default function NavBar() {
     const [menu, setMenu] = useState(false);
-    const menuItems = ["Home", "Projects", "Services", "About Us", "Contact"];
+    const menuItems = ["Home", "Projects", "Services", "About Me", "Contact"];
 
     return (
         <header className="navbar">
@@ -21,7 +21,7 @@ export default function NavBar() {
                 <ul>
                     {menuItems.map((item) => (
                         <li
-                            className="navbar__menu__item navbar__menu__item--hover"
+                            className="navbar__menu__item navbar__menu__item--hover" key={item}
                             onClick={() => setMenu(false)}
                         >
                             <a href="./">{item}</a>
