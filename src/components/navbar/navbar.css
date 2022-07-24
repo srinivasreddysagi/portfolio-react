@@ -17,6 +17,10 @@ li a {
 
 /* ==== NAVBAR MOBILE VIEW ==== */
 
+body {
+    overflow-x: hidden;
+}
+
 .navbar__menu--icon {
     color: var(--clr-btn);
     height: 3.8rem;
@@ -32,16 +36,16 @@ li a {
 .navbar__menu--mobile {
     background: var(--clr-hot-pink-c);
     width: 90%;
-    height: 60vh;
+    height: 75vh;
     padding: 1rem;
     margin: 0 calc(100vw - 95%);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--clr-hot-pink-a);
     border-radius: 16px;
     position: absolute;
-    top: 4rem;
+    top: 5rem;
     z-index: 1;
     display: flex;
     text-align: center;

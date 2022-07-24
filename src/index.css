@@ -21,9 +21,12 @@
     --clr-btn: hsl(351, 78%, 71%);
     --clr-hot-pink-a: hsla(350, 100%, 80%, 0.5);
     --clr-hot-pink-c: hsla(350, 100%, 80%, 0.65);
+    --clr-hot-pink: hsl(350, 100%, 84%);
     --clr-mint: hsl(138, 83%, 84%);
     --light-grayish-blue: hsl(240, 75%, 98%);
     --clr-black: hsl(0, 0%, 0%);
+    --clr-baby-blue: hsl(201, 55%, 94%);
+    --clr-cream: hsl(18, 72%, 93%);
 
     --font-noto-sans: 'Noto Sans Mono', monospace;
     --font-noto-disp: 'Noto Sans Display', sans-serif;
@@ -32,21 +35,17 @@
 
     /* ==== COLLECTION ==== */
 
-    --clr-baby-blue: hsl(201, 55%, 94%);
-    --clr-hot-pink: hsl(350, 100%, 84%);
     --clr-tiffany-blue: hsl(178, 60%, 77%);
     --clr-tiffany-blue-a: hsla(178, 60%, 77%, 0.8);
     --clr-mint-c: hsl(138, 100%, 90%);
     --clr-mint-a: hsl(138, 83%, 90%);
     --clr-yellow: hsl(37, 87%, 88%);
-    --clr-cream: hsl(18, 72%, 93%);
     --bright-blue: hsl(224, 93%, 58%);
     --moderate-cyan: hsl(170, 45%, 43%);
     --clr-blk: hsl(210, 29.03%, 24.31%);
     --very-dark-blue: hsl(243, 87%, 12%);
     --desaturated-blue: hsl(238, 22%, 44%);
     --light-bg: hsl(207, 97%, 95%);
-    --font-noto-sans: 'Noto Sans Mono', monospace;
     --font-open-sans: "Open Sans", sans-serif;
     --font-raleway: "Raleway", sans-serif;
 }
@@ -60,8 +59,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: var(--font-noto-sans);
     background: var(--dark-bg);
-    min-height: 100vh;
-    overflow: hidden;
 }
 
 code {
@@ -77,4 +74,25 @@ section {
     margin-top: 4rem;
     margin-bottom: 4rem;
     max-width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--clr-baby-blue);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--clr-hot-pink);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-btn);
 }

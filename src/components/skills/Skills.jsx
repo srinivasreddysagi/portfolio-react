@@ -1,34 +1,19 @@
-const skills = [
-    { key: "1", skill: "HTML" },
-    { key: "2", skill: "CSS" },
-    { key: "3", skill: "Java Script" },
-    { key: "4", skill: "React JS" },
-    { key: "5", skill: "Node JS" },
-    { key: "6", skill: "Git/GitHub" },
-    { key: "7", skill: "MySQL" },
-    { key: "8", skill: "MongoDB" },
-    { key: "9", skill: "Java" },
-    { key: "10", skill: "Python" },
-];
+import "./skills.css";
+import data from "./skillset";
 
 export default function Skills() {
     return (
         <section className="skills">
             <h2>Skills</h2>
-            <div className="skills__skill">
-                {skills.map((i) => (
-                    <Skill sk={i.skill}></Skill>
+            <ul className="skills__container">
+                {data.map((i) => (
+                    <Skill key={i.key} skill={i.skill}></Skill>
                 ))}
-            </div>
+            </ul>
         </section>
     );
 }
 
-function Skill(props) {
-    return (
-        <p key={props.key} className="skill">
-            {props.sk}
-        </p>
-    );
+function Skill({ skill }) {
+    return <li className="skills__container__skill">{skill}</li>;
 }
-

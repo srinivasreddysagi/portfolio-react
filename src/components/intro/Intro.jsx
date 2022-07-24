@@ -27,8 +27,8 @@ export default function Intro() {
                     latest technologies.
                 </p>
                 <p className="intro__content__para">
-                    Experienced in working with web technologies and expertise
-                    in building beautiful and responsive websites.
+                    Experienced in working with frontend web technologies and expertise
+                    in developing beautiful and responsive websites.
                 </p>
                 <div className="intro__content__resume">
                     <a
