@@ -31,3 +31,4 @@ function Skill(props) {
         </p>
     );
 }
+

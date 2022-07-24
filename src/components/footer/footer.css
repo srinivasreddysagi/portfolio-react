@@ -1,0 +1,112 @@
+.contact {
+    background-color: hsl(238, 22%, 50%);
+    color: var(--light-grayish-blue);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact__left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__basic {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0.9;
+}
+
+.contact__basic p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact__social {
+    display: flex;
+    gap: 2rem;
+    align-self: center;
+}
+
+.contact__social a {
+    color: var(--light-grayish-blue);
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    padding: 0.4rem;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.contact__social a:hover {
+    color: var(--very-dark-blue);
+    transition: 0.2s;
+}
+
+@media (min-width: 750px) {
+    section {
+        margin: auto;
+        max-width: 80rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .topbar__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .topbar__menu ul li {
+        margin-right: 1rem;
+    }
+
+    .topbar div ul li a {
+        background-color: hsl(261, 67%, 70%);
+        padding: 0.5rem 0.7rem;
+        border-radius: 0.4rem;
+        color: #fff;
+    }
+
+    .topbar div ul li a:hover {
+        transition: 0.5s;
+        background-color: hsl(261, 67%, 65%);
+    }
+
+    .topbar__menu ul li {
+        margin-right: 4rem;
+    }
+
+    .intro {
+        flex-direction: row;
+        align-items: center;
+        gap: 6rem;
+        padding: 5rem;
+        justify-content: center;
+    }
+
+    .intro__text {
+        width: 50%;
+        text-align: left;
+    }
+
+    .intro__text-h {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .contact {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

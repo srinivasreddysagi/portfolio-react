@@ -1,0 +1,123 @@
+.projects {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.projects__show {
+    max-width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.projects__show-project {
+    background-color: var(--light-grayish-blue);
+    width: 24rem;
+    max-width: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 4px hsl(238, 22%, 50%, 0.15);
+}
+
+.projects__show-project:hover {
+    box-shadow: 0px 8px 10px hsl(238, 22%, 50%, 0.15);
+    transition: 0.2s;
+}
+
+.projects__show-project p {
+    opacity: 0.8;
+}
+
+.links-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projects__show-project a {
+    color: #000;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.8;
+}
+
+.projects__show-project a:hover {
+    opacity: none;
+    color: var(--moderate-cyan);
+    transition: 0.2s;
+}
+
+@media (min-width: 750px) {
+    section {
+        margin: auto;
+        max-width: 80rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .topbar__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .topbar__menu ul li {
+        margin-right: 1rem;
+    }
+
+    .topbar div ul li a {
+        background-color: hsl(261, 67%, 70%);
+        padding: 0.5rem 0.7rem;
+        border-radius: 0.4rem;
+        color: #fff;
+    }
+
+    .topbar div ul li a:hover {
+        transition: 0.5s;
+        background-color: hsl(261, 67%, 65%);
+    }
+
+    .topbar__menu ul li {
+        margin-right: 4rem;
+    }
+
+    .intro {
+        flex-direction: row;
+        align-items: center;
+        gap: 6rem;
+        padding: 5rem;
+        justify-content: center;
+    }
+
+    .intro__text {
+        width: 50%;
+        text-align: left;
+    }
+
+    .intro__text-h {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .contact {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
