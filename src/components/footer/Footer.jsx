@@ -1,3 +1,6 @@
+import "./footer.css";
+import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
+
 export default function Footer() {
     return (
         <footer className="contact" id="contact">
@@ -22,21 +25,21 @@ export default function Footer() {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <i className="fa-brands fa-linkedin"></i>
+                    <BsLinkedin />
                 </a>
                 <a
                     href="https://github.com/srinivasreddysagi"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <i className="fa-brands fa-github"></i>
+                    <BsGithub />
                 </a>
                 <a
                     href="https://wa.me/918297696398"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <i className="fa-brands fa-whatsapp"></i>
+                    <BsWhatsapp />
                 </a>
             </div>
         </footer>

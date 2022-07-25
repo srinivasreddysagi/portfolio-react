@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@400;500;600;700&display=swap");
 
 *,
 *::before,
@@ -13,32 +13,32 @@
 }
 
 :root {
-
     /* ==== USING ==== */
 
-    
-    --dark-bg: 	hsl(210, 29.03%, 24.31%);
+    --dark-bg: hsl(210, 29.03%, 24.31%);
     --clr-btn: hsl(351, 78%, 71%);
     --clr-hot-pink-a: hsla(350, 100%, 80%, 0.5);
     --clr-hot-pink-c: hsla(350, 100%, 80%, 0.65);
     --clr-hot-pink: hsl(350, 100%, 84%);
+    --clr-hot-red: hsl(5.61, 78.08%, 57.06%);
     --clr-mint: hsl(138, 83%, 84%);
     --light-grayish-blue: hsl(240, 75%, 98%);
     --clr-black: hsl(0, 0%, 0%);
     --clr-baby-blue: hsl(201, 55%, 94%);
     --clr-cream: hsl(18, 72%, 93%);
+    --clr-cream-a: hsla(18, 72%, 93%, 0.8);
+    --light-bg-a: hsla(207, 97%, 95%, 0.8);
 
-    --font-noto-sans: 'Noto Sans Mono', monospace;
-    --font-noto-disp: 'Noto Sans Display', sans-serif;
+    --font-noto-sans: "Noto Sans Mono", monospace;
+    --font-noto-disp: "Noto Sans Display", sans-serif;
     --trans: all 0.4s ease;
     --trans-less: all 0.5s ease;
 
     /* ==== COLLECTION ==== */
 
     --clr-tiffany-blue: hsl(178, 60%, 77%);
-    --clr-tiffany-blue-a: hsla(178, 60%, 77%, 0.8);
-    --clr-mint-c: hsl(138, 100%, 90%);
     --clr-mint-a: hsl(138, 83%, 90%);
+    --clr-mint-c: hsla(138, 100%, 90%, 0.4);
     --clr-yellow: hsl(37, 87%, 88%);
     --bright-blue: hsl(224, 93%, 58%);
     --moderate-cyan: hsl(170, 45%, 43%);
@@ -78,21 +78,21 @@ section {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--clr-baby-blue);
+    background: var(--clr-baby-blue);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--clr-hot-pink);
-  border-radius: 4px;
+    background: var(--clr-hot-pink);
+    border-radius: 4px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--clr-btn);
+    background: var(--clr-btn);
 }

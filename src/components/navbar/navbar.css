@@ -44,7 +44,7 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--clr-hot-pink-a);
     border-radius: 16px;
-    position: absolute;
+    position: fixed;
     top: 5rem;
     z-index: 1;
     display: flex;
@@ -76,11 +76,13 @@ body {
     margin-right: 1rem;
     transform: translateX(0%);
     transition: var(--trans);
+    opacity: 1;
 }
 
 .navbar__menu--mobile--hide {
-    transform: translateX(150%);
+    transform: translateX(100%);
     transition: var(--trans);
+    opacity: 0;
 }
 
 /* ---- NAVBAR MOBILE VIEW ---- */
@@ -100,6 +102,10 @@ body {
 
     .navbar {
         border-top: 4px solid var(--clr-btn);
+    }
+
+    .navbar__menu--desktop {
+        opacity: 1;
     }
 
     .navbar__menu--desktop ul {
